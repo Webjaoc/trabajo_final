@@ -1,8 +1,9 @@
  // Esperar a que el DOM esté listo
     window.addEventListener("DOMContentLoaded", function() {
       const xhr = new XMLHttpRequest();
-      xhr.open("GET", "../../json/noticias.json", true);
-
+      xhr.open("GET", "../json/noticias.json", true);
+      console.log(xhr);
+      
       xhr.onload = function() {
         if (xhr.status === 200) {
           try {
@@ -23,7 +24,7 @@
         document.getElementById("listaNoticias").innerText = "Error de conexión con el servidor.";
       };
 
-      xhr.send();
+      xhr.send(null);
 
       function mostrarNoticias(noticias) {
         const contenedor = document.getElementById("listaNoticias");

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" >
+        <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" >
+        <link rel="stylesheet" href="../css/style.css">
+        <title>WebNova</title> 
+    </head>
+<body>
+<!--Agregamos el header y el menu de navegacion-->    
+    <header class="site-header">
+        <div class="container">
+            <img src="../assets/images/favicon.png" alt="Logo" class="logo">
+            <nav class="bar_nav">
+                <a href="../index.html" class="inactive">Inicio</a>
+                <a href="galeria.html" class="inactive">Galería</a>
+                <a href="presupuesto.html" class="inactive">Presupuesto</a>
+                <a href="contacto.html" class="active">Contacto</a>
+            </nav>
+        </div>
+    </header>
+<!--creamos el contenedor para la direccion y en el cargaremos tambien el mapa-->    
+    <main class="map-container">
+        <div class="direccion">
+            <h1>Contacto</h1>
+            <p>Dirección: Calle Baumgarten 123, CP 6850, Dornbirn</p>
+            <p>Teléfono: 600123456</p>
+            <p>Email: info@webnova.test</p>
+        </div>         
+        <div id="map"></div>
+    </main>
+<!--Footer-->
+    <footer class="footer">
+        <div class="footer_container">
+            <p class="legal">&copy; Todos los derechos reservados</p>
+            <address>WebNova Solutions —Calle Baumgarten 123, CP 6850, Dornbirn</address>
+            <div class="socials">
+                <a href="https://www.facebook.com/"><img src="../assets/images/facebook.png" width="24" height="24" alt="Facebook" ></a>
+                <a href="https://x.com/?lang=es"><img src="../assets/images/gorjeo.png" alt="X"></a>
+                <a href="https://www.instagram.com/"><img src="../assets/images/instagram.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+<!--Conectamos con los script de otras carpetas-->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+<script src="../js/contacto.js"></script>
+</body>
+</html>

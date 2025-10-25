@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>WebNova</title>
+</head>
+<body>
+    <!--Header y barra de navegacion-->
+    <header class="site-header">
+        <div class="container">
+            <img src="/assets/images/favicon.png" alt="Logo" class="logo">
+            <nav class="bar_nav">
+                <a href="index.html" class="active">Inicio</a>
+                <a href="./views/galeria.html" class="inactive">Galería</a>
+                <a href="./views/presupuesto.html" class="inactive">Presupuesto</a>
+                <a href="./views/contacto.html" class="inactive">Contacto</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!--Cuatro secciones de nivel informativo-->
+        <section class="hero container">
+            <h1>Bienvenido a WebNova Solutions</h1>
+            <p>Soluciones web modernas para tu negocio.</p>
+        </section>
+        <section id="servicios" class="container">
+            <h2>Servicios destacados</h2>
+            <div class="cards">
+                <article class="card">
+                    <h3>Desarrollo Web</h3>
+                    <p>Creación de sitios web a medida.</p>
+                </article>
+                <article class="card">
+                    <h3>Tiendas Online</h3>
+                    <p>eCommerce optimizado para ventas.</p>
+                </article>
+                <article class="card">
+                    <h3>Aplicaciones</h3>
+                    <p>Aplicaciones web progresivas (PWA).</p>                    
+                </article>
+            </div>
+        </section>
+        <!--Aqui cargaremos los Json -->
+        <section id="noticias" class="container">
+            <h2>Noticias:<span class="listaNoticias"></span></h2>
+            <div id="listaNoticias"></div>
+        </section>
+        <section id="contacto-rapido" class="container card">
+            <h2>Contacto rápido</h2>
+            <p>¿Quieres contactarnos? <a href="./views/contacto.html">Has click aqui</a></p>
+        </section>    
+    </main>
+    <!--Footer-->
+    <footer class="footer">
+        <div class="footer_container">
+            <p class="legal">&copy; Todos los derechos reservados</p>
+            <address>WebNova Solutions —Calle Baumgarten 123, CP 6850, Dornbirn</address>
+            <div class="socials">
+                <a href="https://www.facebook.com/"><img src="./assets/images/facebook.png" width="24" height="24" alt="Facebook" ></a>
+                <a href="https://x.com/?lang=es"><img src="./assets/images/gorjeo.png" alt="X"></a>
+                <a href="https://www.instagram.com/"><img src="./assets/images/instagram.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+<!--Coneccion con la carpeta de js-->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/noticias.js"></script>
+</body>
+</html>

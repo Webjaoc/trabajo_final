@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon">
+    <title>WebNova</title>
+</head>
+<body>
+    <!--Header-->
+    <header class="site-header">
+        <div class="container">
+            <img src="../assets/images/favicon.png" alt="Logo" class="logo">
+            <nav class="bar_nav">
+                <a href="../index.html" class="inactive">Inicio</a>
+                <a href="galeria.html" class="inactive">Galería</a>
+                <a href="presupuesto.html" class="active">Presupuesto</a>
+                <a href="contacto.html" class="inactive">Contacto</a>
+            </nav>
+        </div>
+    </header>
+    <!--Formulario-->
+    <form id="formPresupuesto">
+        <div class="alert"></div>
+        <fieldset>
+            <legend>Datos de contacto</legend>
+            <label for="nombre">Nombre</label>
+            <input id="nombre" name="nombre" type="text">
+            <label for="apellidos">Apellidos</label>
+            <input id="apellidos" name="apellidos" type="text">
+            <label for="telefono">Teléfono</label>
+            <input id="telefono" name="telefono" type="tel">
+            <label for="email">Correo electrónico</label>
+            <input id="email" name="email" type="email">
+        </fieldset>
+        <fieldset class="presupuesto">
+            <legend>Productos</legend>
+            <label for="producto">Producto
+                    <select id="producto" name="producto">
+                    <option value="" >-- Selecciona --</option>
+                    <option value="1000" >Sitio web - 1000€</option>
+                    <option value="1500" >Tienda online - 1500€</option>
+                    <option value="2000" >Aplicación - 2000€</option>
+                </select>
+            </label>
+            <label for="plazos">Plazo (meses)
+                <input id="plazos" type="number" min="1" value="1">
+            </label>
+        </fieldset>
+        <fieldset class="extras" id="extras">
+            <legend>Extras</legend>
+            <label><input type="checkbox" class="extra" name="seo" value="200"> SEO (200€)</label>
+            <label><input type="checkbox" class="extra" name="mantenimiento" value="300"> Mantenimiento (300€)</label>
+            <label><input type="checkbox" class="extra" name="soporte" value="150"> Soporte (150€)</label>
+        </fieldset>
+        <fieldset>
+            <div class="resultado">
+                <p>Presupuesto: <span id="total">0</span> €</p>
+            </div>
+            <div class="cond">
+                <label class="condiciones" for="condiciones">
+                    <input id="condiciones" type="checkbox" name="total">
+                     Acepto las políticas de privacidad
+                </label>
+            </div>
+            <div class="botones">
+                <button id="resetBtn" type="reset">Reset</button>
+                <button id="submitBtn" type="submit">Enviar</button>
+            </div>
+        </fieldset>
+    </form> 
+<!--Footer-->
+    <footer class="footer">
+        <div class="footer_container">
+            <p class="legal">&copy; Todos los derechos reservados</p>
+            <address>WebNova Solutions —Calle Baumgarten 123, CP 6850, Dornbirn</address>
+            <div class="socials">
+                <a href="https://www.facebook.com/"><img src="../assets/images/facebook.png" width="24" height="24" alt="Facebook" ></a>
+                <a href="https://x.com/?lang=es"><img src="../assets/images/gorjeo.png" alt="X"></a>
+                <a href="https://www.instagram.com/"><img src="../assets/images/instagram.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>    
+<script src="../js/presupuesto.js"></script>
+</body>
+</html>

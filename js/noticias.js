@@ -1,7 +1,7 @@
  // Esperar a que el DOM esté listo
     window.addEventListener("DOMContentLoaded", function() {
       const xhr = new XMLHttpRequest();
-      xhr.open("GET", "json/noticias.json", true);
+      xhr.open("GET", "../../json/noticias.json", true);
 
       xhr.onload = function() {
         if (xhr.status === 200) {

@@ -2,24 +2,16 @@
 {
   "noticias": [
     {
-      "titulo": "Nuevo lanzamiento",
-      "fecha": "01-12-2025",
-      "descripcion": "Presentamos nuestro nuevo producto web optimizado para empresas, con un diseño más rápido y adaptable."
+      "titulo": "Nuevo lanzamiento", "fecha": "01-12-2025", "descripcion": "Presentamos nuestro nuevo producto web optimizado para empresas, con un diseño más rápido y adaptable."
     },
     {
-      "titulo": "Actualización del sitio",
-      "fecha": "15-12-2025",
-      "descripcion": "Mejoras en seguridad, rendimiento y accesibilidad para todos nuestros usuarios."
+      "titulo": "Actualización del sitio", "fecha": "15-12-2025", "descripcion": "Mejoras en seguridad, rendimiento y accesibilidad para todos nuestros usuarios."
     },
     {
-      "titulo": "Incorporamos nueva sección de soporte",
-      "fecha": "05-01-2026",
-      "descripcion": "Ahora los clientes pueden acceder a guías paso a paso y asistencia en línea directamente desde la plataforma."
+      "titulo": "Incorporamos nueva sección de soporte", "fecha": "05-01-2026", "descripcion": "Ahora los clientes pueden acceder a guías paso a paso y asistencia en línea directamente desde la plataforma."
     },
     {
-      "titulo": "Evento de tecnología 2026",
-      "fecha": "10-02-2026",
-      "descripcion": "Anunciamos nuestra participación en el evento TechFuture 2026, donde mostraremos innovaciones en IA y desarrollo web."
+      "titulo": "Evento de tecnología 2026", "fecha": "10-02-2026", "descripcion": "Anunciamos nuestra participación en el evento TechFuture 2026, donde mostraremos innovaciones en IA y desarrollo web."
     }
   ]
 }

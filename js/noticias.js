@@ -1,47 +1,29 @@
- // Esperar a que el DOM esté listo
-    window.addEventListener("DOMContentLoaded", function() {
-      const xhr = new XMLHttpRequest();
-      xhr.open("GET", "../json/noticias.json", true);
-      console.log(xhr);
-      
-      xhr.onload = function() {
-        if (xhr.status === 200) {
-          try {
-            const datos = JSON.parse(xhr.responseText);
-            mostrarNoticias(datos.noticias);
-          } catch (error) {
-            console.error("Error al parsear JSON:", error);
-            document.getElementById("listaNoticias").innerText = "Error al leer los datos.";
-          }
-        } else {
-          console.error("Error al cargar las noticias:", xhr.status);
-          document.getElementById("listaNoticias").innerText = "No se pudieron cargar las noticias.";
-        }
-      };
 
-      xhr.onerror = function() {
-        console.error("Error de conexión AJAX");
-        document.getElementById("listaNoticias").innerText = "Error de conexión con el servidor.";
-      };
 
-      xhr.send(null);
-
-      function mostrarNoticias(noticias) {
-        const contenedor = document.getElementById("listaNoticias");
-        contenedor.innerHTML = "";
-
-        noticias.forEach(noticia => {
-          const item = document.createElement("div");
-          item.classList.add("noticia");
-          item.innerHTML = `
-            <article>
-              <div class="article_noticias">
-                <h3>${noticia.titulo}</h3>
-                <time>${noticia.fecha}</time>
-                <p>${noticia.descripcion}</p>
-              </div>
-            </article>`;
-          contenedor.appendChild(item);
-        });
+function cargar() {
+  $.ajax({
+    url: './json/noticias.json',
+    type: 'GET',
+    dataType: 'json', // importante
+    success: function (objeto_json) {
+      let cadena = "";
+    
+      for (let i = 0; i < objeto_json.noticias.length; i++) {
+        
+        cadena = cadena + objeto_json.noticias[i].titulo+"<br/>";
+        cadena = cadena + objeto_json.noticias[i].fecha +"<br/>";
+        cadena = cadena + objeto_json.noticias[i].descripcion +"<br/><hr>";
+        
       }
-    });
+
+      $("#listaNoticias").html(cadena);
+    },
+    error: function (xhr, status) {
+      alert('Disculpe, existió un problema');
+    }
+  });
+}
+
+cargar()
+
+
